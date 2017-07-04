@@ -56,7 +56,7 @@ function getResults(input) {
 function setHiddenFields() {
   answer.value = Math.floor(Math.random() * 10000).toString();
   while (answer.length < 4) {
-    answer.value = "0" + answer.value.toString;
+    answer.value = "0" + answer.value;
   }
   attempt.value = "0";
 }
@@ -80,8 +80,8 @@ function showAnswer(success) {
 
 //Allows user to play again!
 function showReplay() {
-  document.getElementById('guessing-div').tyle.display = "none";
-  document.getElementById('replay-div').tyle.display = "block";
+  document.getElementById('guessing-div').style.display = "none";
+  document.getElementById('replay-div').style.display = "block";
 }
 
 //Validation of user input
