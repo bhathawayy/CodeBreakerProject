@@ -6,7 +6,6 @@ let attempt = document.getElementById('attempt');
 //User guess
 function guess() {
     let input = document.getElementById('user-guess');
-    //add functionality to guess function here
     if (answer.value == '' || attempt.value == '') {
       setHiddenFields();
     }
@@ -55,7 +54,7 @@ function getResults(input) {
 
 //Generation of hidden number
 function setHiddenFields() {
-  answer.value = Math.floor(getRandomInteger(10000, 0)).toString;
+  answer.value = Math.floor(Math.random() * 10000).toString;
   while (answer.length < 4) {
     answer.value = "0" + answer.value.toString;
   }
