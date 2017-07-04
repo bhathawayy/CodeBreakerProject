@@ -54,7 +54,7 @@ function getResults(input) {
 
 //Generation of hidden number
 function setHiddenFields() {
-  answer.value = Math.floor(Math.random() * 10000).toString;
+  answer.value = Math.floor(Math.random() * 10000).toString();
   while (answer.length < 4) {
     answer.value = "0" + answer.value.toString;
   }
